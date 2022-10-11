@@ -36,6 +36,8 @@ export class Slideshow {
 		// the main title ("Photography")
 		mainTitleTexts: [...document.querySelectorAll('.title > .oh > .oh__inner')],
 
+		mainTitleBio: [...document.querySelectorAll('.frame > .frame__title')],
+
 		// back control (.content__back)
 		backCtrl: document.querySelector('.content__back'),
 		// navigation (.content__nav-wrap)
@@ -170,6 +172,12 @@ export class Slideshow {
 			ease: 'expo',
 			yPercent: -101
 		}, 0)
+		.to(this.DOM.mainTitleBio, {
+			duration: .9,
+			ease: 'expo',
+			yPercent: -101,
+			opacity: 0
+		}, 0)
 		.to(this.contentItems[this.current].DOM.texts, {
 			duration: 1,
 			ease: 'expo',
@@ -237,6 +245,13 @@ export class Slideshow {
 			startAt: {yPercent: 101},
 			yPercent: 0
 		}, 0)
+		.to(this.DOM.mainTitleBio, {
+			duration: .9,
+			ease: 'expo',
+			startAt: {yPercent: 101},
+			yPercent: 0,
+			opacity: 1
+		}, 0)
 		.to(this.contentItems[this.current].DOM.texts, {
 			duration: 1,
 			ease: 'expo',
@@ -279,7 +294,7 @@ export class Slideshow {
 		.to(this.DOM.el, {
 			duration: 1,
 			ease: 'expo',
-			y: direction === 'next' ? `-=${winsize.height/2 + winsize.height*.02}` : `+=${winsize.height/2 + winsize.height*.02}`,
+			y: direction === 'next' ? `-=${(winsize.height/4)*3 + winsize.height*0.02}` : `+=${(winsize.height/4)*3 + winsize.height*0.02}`,
 			onComplete: () => {
 				this.isAnimating = false;
 			}

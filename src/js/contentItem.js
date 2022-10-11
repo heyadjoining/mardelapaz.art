@@ -11,7 +11,9 @@
         // description (.content__item-description)
         description: null,
         // all .oh__inner text spans that will animate in/out
-        texts: null
+        texts: null,
+        // bio
+        bio: null
 	}
     
     /**
@@ -24,5 +26,7 @@
         this.DOM.description = this.DOM.el.querySelector('.content__item-description');
 
         this.DOM.texts = [...this.DOM.el.querySelectorAll('.oh > .oh__inner')];
+
+        this.DOM.bio = this.DOM.el.querySelectorAll('.frame > .frame__title');
 	}
 }
