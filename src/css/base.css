@@ -186,6 +186,7 @@ a:focus-visible {
 
 .frame__logo {
 	line-height: 0.9;
+	width: 15vw;
 }
 
 .frame__logo-title {
