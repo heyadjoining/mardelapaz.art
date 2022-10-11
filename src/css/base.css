@@ -200,6 +200,12 @@ a:focus-visible {
 	margin-left: 0.75rem;
 }
 
+
+
+#mobile-content > div > .oh {
+	margin-bottom: -5px;
+}
+
 .stack-wrap {
 	width: 100%;
 	position: absolute;
@@ -224,6 +230,10 @@ a:focus-visible {
 	cursor: pointer;
 	will-change: width, height, transform, opacity;
 	transition: opacity 0.3s;
+}
+
+.stack__item:nth-last-child(2){
+	display: none;
 }
 
 .stack__item:hover {
@@ -479,6 +489,10 @@ a:focus-visible {
 @media screen and (max-width: 53em) {
 	.frame{
 		display: none;
+	}
+
+	.stack__item:nth-last-child(2){
+		display: inline;
 	}
 
 	.content__item-title {
