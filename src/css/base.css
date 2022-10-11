@@ -386,10 +386,10 @@ a:focus-visible {
 
 .content__nav svg {
 	stroke: #fff;
-	stroke-width: 3px;
+	stroke-width: 7px;
     width: auto;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: opacity 0.3s;
 }
 
@@ -508,5 +508,9 @@ a:focus-visible {
 
 	.stack__item--current h2{
 		display: none;
+	}
+
+	.content__back{
+		width: 25vw;
 	}
 }
