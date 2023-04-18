@@ -459,6 +459,12 @@ a:focus-visible {
 		display: inline-flex;
 		flex-direction: column;
 	}
+	.price{
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 32px; 
+		margin: 0;
+	}
 	.content__item-title > span:first-child {
 		padding-right: 2rem;
 	}
