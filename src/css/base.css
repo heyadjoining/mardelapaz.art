@@ -19,7 +19,7 @@
 	--stack-margin: 10rem;
 	--slide-gap: 2vh;
 	--stack-width: 38vw;
-	--stack-item-height: 15vh;
+	--stack-item-height: 21vh;
 	--slide-width: 40vw;
 	--slide-height: 75vh;
 }
@@ -223,7 +223,7 @@ a:focus-visible {
 }
 
 .stack__item {
-	opacity: 0.2;
+	opacity: 0.5;
 	width: 100%;
 	height: var(--stack-item-height);
 	background-size: cover;
@@ -238,7 +238,7 @@ a:focus-visible {
 }
 
 .stack__item:hover {
-	opacity: 0.5;
+	opacity: 0.75;
 }
 
 .stack__item--empty {
