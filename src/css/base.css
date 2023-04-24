@@ -19,7 +19,7 @@
 	--stack-margin: 10rem;
 	--slide-gap: 2vh;
 	--stack-width: 38vw;
-	--stack-item-height: 21vh;
+	--stack-item-height: 40vh;
 	--slide-width: 40vw;
 	--slide-height: 75vh;
 }
@@ -464,6 +464,7 @@ a:focus-visible {
 		font-weight: 400;
 		font-size: 32px; 
 		margin: 0;
+		display: none;
 	}
 	.content__item-title > span:first-child {
 		padding-right: 2rem;

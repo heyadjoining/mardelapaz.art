@@ -12,7 +12,7 @@
   --stack-margin: 10rem;
   --slide-gap: 2vh;
   --stack-width: 38vw;
-  --stack-item-height: 21vh;
+  --stack-item-height: 40vh;
   --slide-width: 40vw;
   --slide-height: 75vh;
   margin: 0;
@@ -447,6 +447,7 @@ a:focus-visible {
     font-family: Playfair Display, serif;
     font-size: 32px;
     font-weight: 400;
+    display: none;
   }
 
   .content__item-title > span:first-child {
