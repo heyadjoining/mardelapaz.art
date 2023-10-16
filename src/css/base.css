@@ -374,6 +374,15 @@ a:focus-visible {
 	justify-content: space-between;
 }
 
+
+.price{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 32px; 
+	margin: 0;
+	display: none!important;
+}
+
 .content__nav {
 	z-index: 100;
 	cursor: pointer;
@@ -458,13 +467,6 @@ a:focus-visible {
 	.content__item-title {
 		display: inline-flex;
 		flex-direction: column;
-	}
-	.price{
-		font-family: 'Playfair Display', serif;
-		font-weight: 400;
-		font-size: 32px; 
-		margin: 0;
-		display: none;
 	}
 	.content__item-title > span:first-child {
 		padding-right: 2rem;
